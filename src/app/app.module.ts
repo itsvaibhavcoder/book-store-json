@@ -9,12 +9,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BookComponent } from './book/book.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { AddBookComponent } from './add-book/add-book.component';
 @NgModule({
   declarations: [
     AppComponent,
     AdminComponent,
     NavbarComponent,
-    BookComponent
+    BookComponent,
+    AddBookComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,8 @@ import { MatIconModule } from '@angular/material/icon';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

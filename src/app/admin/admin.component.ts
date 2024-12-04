@@ -11,6 +11,12 @@ export class AdminComponent implements OnInit{
   book:any  = {title: '', author: '', description: '', price: 0, image: ''};
   isEditMode:boolean = false;
   isFormVisible:boolean = false;
+  
+  //Pagination
+  currentPage: number = 1;
+  totalPages: number = 1;
+  itemsPerPage: number = 5;
+  
   constructor(private http: HttpClient) {}
   
   ngOnInit(): void {
@@ -70,5 +76,4 @@ export class AdminComponent implements OnInit{
     this.book = { title: '', author: '', description: '', price: 0, image:''};
     this.isEditMode = false;
   }
-
 }
