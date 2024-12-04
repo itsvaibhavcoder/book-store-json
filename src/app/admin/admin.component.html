@@ -1,0 +1,36 @@
+<div class="admin-container">
+    <h2>Book Management</h2>
+
+    <button (click)="toggleForm()" class="add-book-btn">Add Book</button>
+  
+    <div *ngIf="isFormVisible" class="book-form">
+      <h3>{{ isEditMode ? 'Edit Book' : 'Add New Book' }}</h3>
+      <form (submit)="onSubmit()">
+        <label>Title:</label>
+        <input [(ngModel)]="book.title" name="title" required />
+        <label>Author:</label>
+        <input [(ngModel)]="book.author" name="author" required />
+        <label>Description:</label>
+        <textarea [(ngModel)]="book.description" name="description"></textarea>
+        <label>Price:</label>
+        <input [(ngModel)]="book.price" name="price" type="number" required />
+        <label>Image:</label>
+        <input type="text" [(ngModel)]="book.image" name="image" required/>
+        <button type="submit">{{ isEditMode ? 'Update Book' : 'Add Book' }}</button>
+
+        <button type="button" (click)="toggleForm()">Cancel</button>
+      </form>
+    </div>
+  
+    <hr />
+    <div *ngFor="let b of books" class="book-item">
+      <h4>{{ b.title }}</h4>
+      <img src="../../assets/The_Fellowship_of_the_Ring_cover.gif" alt="book image"/>
+      <p><strong>Author:</strong> {{ b.author }}</p>
+      <p><strong>Price:</strong> {{ b.price | currency }}</p>
+      <p>{{ b.description }}</p>
+      <button (click)="editBook(b)">Edit</button>
+      <button (click)="deleteBook(b.id)">Delete</button>
+    </div>
+</div>
+  

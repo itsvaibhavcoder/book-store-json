@@ -1,0 +1,25 @@
+body{
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 20px; 
+    background-color: #72abe5;
+    height: 60px; 
+
+    .left-cnt {
+        display: flex;
+        align-items: center;
+        h3{
+            margin-left: 10px;
+        }
+    }
+
+    .right-cnt {
+        display: flex;
+        gap: 15px; 
+        align-items: center;
+    }
+}
