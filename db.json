@@ -7,6 +7,22 @@
       "description": "The first part of J.R.R. Tolkien's epic adventure, The Lord of the Rings.",
       "price": 1500,
       "image": "https://upload.wikimedia.org/wikipedia/en/8/8e/The_Fellowship_of_the_Ring_cover.gif"
+    },
+    {
+      "id": "9cb6",
+      "title": "1984",
+      "author": "George Orwell",
+      "description": "A dystopian social science fiction novel and cautionary tale.",
+      "price": 500,
+      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1327144697i/3744438.jpg"
+    },
+    {
+      "id": "2432",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "description": "A gripping, heart-wrenching, and wholly remarkable tale of coming-of-age in a South poisoned by virulent prejudice.",
+      "price": 900,
+      "image": "https://thefirstedition-prod.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/06/15173635/Lee-Harper_To-Kill-A-Mockingbird_14085-3.jpg"
     }
   ],
   "users": [],
